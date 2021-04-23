@@ -1,7 +1,7 @@
 # rosneuro_workspace_ubuntu
 
-| **NODO** | **BUILD**  |
-|-|-|
+| **NODO** | **BUILD**  | |
+|-|-|-|
 | rosneuro_decisionmaking | ERROR | MISSING: wtkprocessing |
 | rosneuro_processing | ERROR | MISSING wtkprocessing |
 | rosneuro_recorder | ERROR | MISSING: XDFIO_LIBRARIES |
