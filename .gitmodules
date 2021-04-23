@@ -1,0 +1,36 @@
+[submodule "catkin_ws/src/rosneuro_acquisition"]
+	path = catkin_ws/src/rosneuro_acquisition
+	url = https://github.com/cesare-montresor/rosneuro_acquisition.git
+[submodule "catkin_ws/src/rosneuro_data"]
+	path = catkin_ws/src/rosneuro_data
+	url = https://github.com/cesare-montresor/rosneuro_data.git
+[submodule "catkin_ws/src/rosneuro_acquisition_plugins"]
+	path = catkin_ws/src/rosneuro_acquisition_plugins
+	url = https://github.com/cesare-montresor/rosneuro_acquisition_plugins.git
+[submodule "catkin_ws/src/rosneuro_processing"]
+	path = catkin_ws/src/rosneuro_processing
+	url = https://github.com/cesare-montresor/rosneuro_processing.git
+[submodule "catkin_ws/src/rosneuro_msgs"]
+	path = catkin_ws/src/rosneuro_msgs
+	url = https://github.com/cesare-montresor/rosneuro_msgs.git
+[submodule "catkin_ws/src/rosneuro_matlab"]
+	path = catkin_ws/src/rosneuro_matlab
+	url = https://github.com/cesare-montresor/rosneuro_matlab.git
+[submodule "catkin_ws/src/rosneuro_decisionmaking"]
+	path = catkin_ws/src/rosneuro_decisionmaking
+	url = https://github.com/cesare-montresor/rosneuro_decisionmaking.git
+[submodule "catkin_ws/src/rosneuro_feedback"]
+	path = catkin_ws/src/rosneuro_feedback
+	url = https://github.com/cesare-montresor/rosneuro_feedback.git
+[submodule "catkin_ws/src/rosneuro_launchers"]
+	path = catkin_ws/src/rosneuro_launchers
+	url = https://github.com/cesare-montresor/rosneuro_launchers.git
+[submodule "catkin_ws/src/rosneuro_cybathlon"]
+	path = catkin_ws/src/rosneuro_cybathlon
+	url = https://github.com/cesare-montresor/rosneuro_cybathlon.git
+[submodule "catkin_ws/src/rosneuro_recorder"]
+	path = catkin_ws/src/rosneuro_recorder
+	url = https://github.com/cesare-montresor/rosneuro_recorder.git
+[submodule "catkin_ws/src/rosneuro_visualizer"]
+	path = catkin_ws/src/rosneuro_visualizer
+	url = https://github.com/cesare-montresor/rosneuro_visualizer.git
