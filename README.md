@@ -4,18 +4,18 @@
 
 | **TYPE** | **PACKAGE** | **BUILD**  | **Dependencies** |
 |-|-|-|-|
-| PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
-| PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
+| USER | rosneuro_launchers | OK ||
+| USER | rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
+| COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
+| COMMON | rosneuro_msgs | OK ||
+| COMMON | rosneuro_data | OK ||
+| COMMON | rosneuro_feedback | OK ||
 | INPUT | rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
 | INPUT | rosneuro_acquisition_lsl | OK | [liblsl](#liblsl) ||
 | INPUT | rosneuro_acquisition |OK ||
 | INPUT | rosneuro_acquisition_dummydev | OK ||
-| COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
-| COMMON |rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
-| COMMON | rosneuro_launchers | OK ||
-| COMMON | rosneuro_msgs | OK ||
-| COMMON | rosneuro_data | OK ||
-| COMMON | rosneuro_feedback | OK ||
+| PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
+| PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
 | APP | rosneuro_cybathlon | OK ||
 
 
