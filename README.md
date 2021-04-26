@@ -2,7 +2,6 @@
 
 # Build Report
 
-
 | **NODO** | **BUILD**  | **Dependencies** |
 |-|-|-|
 | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
@@ -18,8 +17,6 @@
 | rosneuro_cybathlon | OK ||
 | rosneuro_data | OK ||
 | rosneuro_feedback | OK ||
-
-
 
 
 
@@ -40,7 +37,7 @@ wget https://github.com/sccn/liblsl/releases/download/1.13.1/liblsl-1.13.1-Linux
 sudo dpkg -i liblsl-1.13.1-Linux64-bionic.deb 
 (Note: latest would be 1.14.1 trigger a dependency error about libgcc-s1, 1.13.1 doesn't )
 
-- libeegdev
+### libeegdev
 
 sudo apt-get install libeegdev-dev 
 
