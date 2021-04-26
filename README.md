@@ -11,8 +11,8 @@
 | rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
 | rosneuro_acquisition |OK ||
 | rosneuro_acquisition_dummydev | OK ||
-| rosneuro_acquisition_eegdev | [libeegdev](#libeegdev) ||
-| rosneuro_acquisition_lsl | [LibLsl](#LibLsl) ||
+| rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
+| rosneuro_acquisition_lsl | OK | [LibLsl](#LibLsl) ||
 | rosneuro_launchers | OK ||
 | rosneuro_msgs | OK ||
 | rosneuro_cybathlon | OK ||
