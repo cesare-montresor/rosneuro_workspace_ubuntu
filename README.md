@@ -2,7 +2,7 @@
 
 # Build Report
 
-| *TYPE* | **NODO** | **BUILD**  | **Dependencies** |
+| **TYPE** | **PACKAGE** | **BUILD**  | **Dependencies** |
 |-|-|-|-|
 | PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
 | PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
