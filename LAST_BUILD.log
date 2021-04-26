@@ -1,11 +1,11 @@
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ catkin_make
+ubuntu@ubuntu1804:~/rosneuro$ ./build.sh 
 Base path: /home/ubuntu/rosneuro/catkin_ws
 Source space: /home/ubuntu/rosneuro/catkin_ws/src
 Build space: /home/ubuntu/rosneuro/catkin_ws/build
 Devel space: /home/ubuntu/rosneuro/catkin_ws/devel
 Install space: /home/ubuntu/rosneuro/catkin_ws/install
 ####
-#### Running command: "cmake /home/ubuntu/rosneuro/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/ubuntu/rosneuro/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/rosneuro/catkin_ws/install -G Unix Makefiles" in "/home/ubuntu/rosneuro/catkin_ws/build"
+#### Running command: "make cmake_check_build_system" in "/home/ubuntu/rosneuro/catkin_ws/build"
 ####
 -- Using CATKIN_DEVEL_PREFIX: /home/ubuntu/rosneuro/catkin_ws/devel
 -- Using CMAKE_PREFIX_PATH: /opt/ros/melodic
@@ -25,13 +25,15 @@ Install space: /home/ubuntu/rosneuro/catkin_ws/install
 -- BUILD_SHARED_LIBS is on
 -- BUILD_SHARED_LIBS is on
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
--- ~~  traversing 11 packages in topological order:
+-- ~~  traversing 13 packages in topological order:
 -- ~~  - rosneuro_launchers
 -- ~~  - rosneuro_msgs
 -- ~~  - rosneuro_cybathlon
 -- ~~  - rosneuro_data
 -- ~~  - rosneuro_acquisition
 -- ~~  - rosneuro_acquisition_dummydev
+-- ~~  - rosneuro_acquisition_eegdev
+-- ~~  - rosneuro_acquisition_lsl
 -- ~~  - rosneuro_decisionmaking
 -- ~~  - rosneuro_feedback
 -- ~~  - rosneuro_processing
@@ -48,11 +50,16 @@ Install space: /home/ubuntu/rosneuro/catkin_ws/install
 -- ==> add_subdirectory(rosneuro_cybathlon)
 -- +++ processing catkin package: 'rosneuro_data'
 -- ==> add_subdirectory(rosneuro_data)
--- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
 -- +++ processing catkin package: 'rosneuro_acquisition'
 -- ==> add_subdirectory(rosneuro_acquisition)
 -- +++ processing catkin package: 'rosneuro_acquisition_dummydev'
 -- ==> add_subdirectory(rosneuro_acquisition_plugins/rosneuro_acquisition_dummydev)
+-- +++ processing catkin package: 'rosneuro_acquisition_eegdev'
+-- ==> add_subdirectory(rosneuro_acquisition_plugins/rosneuro_acquisition_eegdev)
+-- Library EEGDEV found. The plugin will be installed
+-- +++ processing catkin package: 'rosneuro_acquisition_lsl'
+-- ==> add_subdirectory(rosneuro_acquisition_plugins/rosneuro_acquisition_lsl)
+-- Library LSL found. The plugin will be installed
 -- +++ processing catkin package: 'rosneuro_decisionmaking'
 -- ==> add_subdirectory(rosneuro_decisionmaking)
 -- Checking for one of the modules 'wtkprocessing'
@@ -92,34 +99,10 @@ MCP_INCLUDE_DIRS
 MCP_LIBRARIES
     linked by target "rosneuro_visualizer" in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
     linked by target "neuroviz" in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-XDFIO_INCLUDE_DIRS
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
-XDFIO_LIBRARIES
-    linked by target "rosneuro_recorder" in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_recorder
 
 -- Configuring incomplete, errors occurred!
 See also "/home/ubuntu/rosneuro/catkin_ws/build/CMakeFiles/CMakeOutput.log".
 See also "/home/ubuntu/rosneuro/catkin_ws/build/CMakeFiles/CMakeError.log".
-Invoking "cmake" failed
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ ^C
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ ^C
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ ^C
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ git add .
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ git commit
-On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-ubuntu@ubuntu1804:~/rosneuro/catkin_ws$ cd ..
-ubuntu@ubuntu1804:~/rosneuro$ gedit LAST_BUILD.md
-
-
+Makefile:320: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1
+Invoking "make cmake_check_build_system" failed
