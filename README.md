@@ -2,21 +2,21 @@
 
 # Build Report
 
-| **NODO** | **BUILD**  | **Dependencies** |
-|-|-|-|
-| rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
-| rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
-| rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
-| rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
-| rosneuro_acquisition |OK ||
-| rosneuro_acquisition_dummydev | OK ||
-| rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
-| rosneuro_acquisition_lsl | OK | [LibLsl](#LibLsl) ||
-| rosneuro_launchers | OK ||
-| rosneuro_msgs | OK ||
-| rosneuro_cybathlon | OK ||
-| rosneuro_data | OK ||
-| rosneuro_feedback | OK ||
+| *TYPE* | **NODO** | **BUILD**  | **Dependencies** |
+|-|-|-|-|
+| PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
+| PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
+| INPUT | rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
+| INPUT | rosneuro_acquisition_lsl | OK | [LibLsl](#LibLsl) ||
+| INPUT | rosneuro_acquisition |OK ||
+| INPUT | rosneuro_acquisition_dummydev | OK ||
+| COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
+| COMMON |rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
+| COMMON | rosneuro_launchers | OK ||
+| COMMON | rosneuro_msgs | OK ||
+| COMMON | rosneuro_data | OK ||
+| COMMON | rosneuro_feedback | OK ||
+| APP | rosneuro_cybathlon | OK ||
 
 
 
