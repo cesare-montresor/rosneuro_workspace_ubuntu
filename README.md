@@ -7,7 +7,7 @@
 | PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
 | PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
 | INPUT | rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
-| INPUT | rosneuro_acquisition_lsl | OK | [LibLsl](#LibLsl) ||
+| INPUT | rosneuro_acquisition_lsl | OK | [libLsl](#libLsl) ||
 | INPUT | rosneuro_acquisition |OK ||
 | INPUT | rosneuro_acquisition_dummydev | OK ||
 | COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
