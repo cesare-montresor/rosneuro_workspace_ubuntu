@@ -26,14 +26,15 @@
 
 ### wtkprocessing
 
+```bash
 (bitbucket, work in progress)
-
+```
 
 ### LibLsl
 
 Download and install the 1.13.1 liblsl using .deb from:
 
-```
+```bash
 https://github.com/sccn/liblsl/releases/tag/1.13.1
 wget https://github.com/sccn/liblsl/releases/download/1.13.1/liblsl-1.13.1-Linux64-bionic.deb
 sudo dpkg -i liblsl-1.13.1-Linux64-bionic.deb 
@@ -43,7 +44,7 @@ _Note: latest would be 1.14.1 trigger a dependency error about libgcc-s1, 1.13.1
 
 ### libeegdev
 
-```
+```bash
 sudo apt-get install libeegdev-dev 
 ```
 
@@ -52,7 +53,7 @@ sudo apt-get install libeegdev-dev
 ### NeuroDebian
 See: https://neuro.debian.net/
 
-```
+```bash
 wget -O- http://neuro.debian.net/lists/bionic.de-m.full | sudo tee /etc/apt/sources.list.d/neurodebian.sources.list
 sudo apt-key adv --recv-keys --keyserver hkp://pool.sks-keyservers.net:80 0xA5D32F012649A5A9
 sudo apt-get update
@@ -60,7 +61,7 @@ sudo apt-get update
 
 #### libxdffileio
 
-```
+```bash
 sudo apt-get install libxdffileio-dev   
 ```
 
