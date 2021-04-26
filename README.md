@@ -7,7 +7,7 @@
 | PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
 | PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
 | INPUT | rosneuro_acquisition_eegdev | OK | [libeegdev](#libeegdev) ||
-| INPUT | rosneuro_acquisition_lsl | OK | [libLsl](#libLsl) ||
+| INPUT | rosneuro_acquisition_lsl | OK | [libLsl](#liblsl) ||
 | INPUT | rosneuro_acquisition |OK ||
 | INPUT | rosneuro_acquisition_dummydev | OK ||
 | COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
@@ -30,7 +30,7 @@
 (bitbucket, work in progress)
 ```
 
-### libLsl
+### liblsl
 
 Download and install the 1.13.1 liblsl using .deb from:
 
