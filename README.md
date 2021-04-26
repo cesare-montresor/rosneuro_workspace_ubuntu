@@ -30,7 +30,7 @@
 (bitbucket, work in progress)
 ```
 
-### LibLsl
+### libLsl
 
 Download and install the 1.13.1 liblsl using .deb from:
 
