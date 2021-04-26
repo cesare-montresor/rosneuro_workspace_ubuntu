@@ -53,11 +53,11 @@ wget -O- http://neuro.debian.net/lists/bionic.de-m.full | sudo tee /etc/apt/sour
 sudo apt-key adv --recv-keys --keyserver hkp://pool.sks-keyservers.net:80 0xA5D32F012649A5A9
 sudo apt-get update
 
-#### - libxdffileio
+#### libxdffileio
 sudo apt-get install libxdffileio-dev   
 
 
-#### - libmcpanel
+#### libmcpanel
 Lib MCP panel appears to be available as via apt only for debian/sid ( requires further investiagtion ) 
 https://neuro.debian.net/pkgs/libmcpanel-dev.html#binary-pkg-libmcpanel-dev
 Main repo: https://salsa.debian.org/neurodebian-team/mcpanel
