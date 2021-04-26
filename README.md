@@ -27,12 +27,12 @@
 
 ## Processing nodes:
 
-- wtkprocessing
+### wtkprocessing
 
 (work in progress)
 
 
-- LibLsl
+### LibLsl
 
 Download and install the 1.13.1 liblsl using .deb from:
 https://github.com/sccn/liblsl/releases/tag/1.13.1
