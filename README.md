@@ -26,7 +26,7 @@
 
 ### wtkprocessing
 
-(work in progress)
+(bitbucket, work in progress)
 
 
 ### LibLsl
