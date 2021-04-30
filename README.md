@@ -72,7 +72,10 @@ sudo apt-get install libxdffileio-dev
 Lib MCP panel appears to be available as via apt only for debian/sid ( requires further investiagtion ).    
 https://neuro.debian.net/pkgs/libmcpanel-dev.html#binary-pkg-libmcpanel-dev    
 Main repo: https://salsa.debian.org/neurodebian-team/mcpanel     
-
+See also, original author: https://github.com/nbourdau
+```
+git clone "https://review.gerrithub.io/mmlabs-mindmaze/mcpanel" deps/mcpanel-mindmaze
+```
 
 
 sudo apt-get install librtfilter-dev
