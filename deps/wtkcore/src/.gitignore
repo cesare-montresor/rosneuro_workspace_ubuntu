@@ -1,0 +1,9 @@
+.deps
+Makefile
+Makefile.in
+wtkcore.pc
+.libs
+*.lo
+*.o
+*.la
+*~

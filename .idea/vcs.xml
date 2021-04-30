@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_acquisition" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_acquisition_plugins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_cybathlon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_decisionmaking" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_feedback" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_launchers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_matlab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_msgs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_processing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_recorder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/catkin_ws/src/rosneuro_visualizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/deps/mcpanel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/deps/wtkprotocol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/deps/wtkxml" vcs="Git" />
+  </component>
+</project>

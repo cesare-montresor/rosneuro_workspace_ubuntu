@@ -27,8 +27,10 @@
 ### wtkprocessing
 
 ```bash
-(bitbucket, work in progress)
+sudo apt-get install libfftw3-dev libtinyxml2-dev libnfft3-dev 
 ```
+
+
 
 ### liblsl
 
@@ -71,5 +73,8 @@ Lib MCP panel appears to be available as via apt only for debian/sid ( requires 
 https://neuro.debian.net/pkgs/libmcpanel-dev.html#binary-pkg-libmcpanel-dev    
 Main repo: https://salsa.debian.org/neurodebian-team/mcpanel     
 
+
+
+sudo apt-get install librtfilter-dev
 
 
