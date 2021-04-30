@@ -34,3 +34,6 @@
 [submodule "catkin_ws/src/rosneuro_visualizer"]
 	path = catkin_ws/src/rosneuro_visualizer
 	url = https://github.com/cesare-montresor/rosneuro_visualizer.git
+[submodule "deps/wtkcore"]
+	path = deps/libs/wtkcore
+	url = https://CesareMontresor@bitbucket.org/CesareMontresor/wtkcore.git
