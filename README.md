@@ -7,7 +7,7 @@
 | **TYPE** | **PACKAGE** | **BUILD**  | **Dependencies** |
 |-|-|-|-|
 | USER | rosneuro_launchers | OK ||
-| USER | rosneuro_visualizer | OK | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
+| USER | rosneuro_visualizer | OK | [libmcpanel](#libmcpanel) |
 | COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
 | COMMON | rosneuro_msgs | OK ||
 | COMMON | rosneuro_data | OK ||
