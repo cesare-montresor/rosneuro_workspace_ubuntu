@@ -1,11 +1,13 @@
 # rosneuro_workspace_ubuntu
 
+
+
 # Build Report
 
 | **TYPE** | **PACKAGE** | **BUILD**  | **Dependencies** |
 |-|-|-|-|
 | USER | rosneuro_launchers | OK ||
-| USER | rosneuro_visualizer | ERROR | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
+| USER | rosneuro_visualizer | OK | [libmcpanel](#libmcpanel) (deb available only for debian/sid) |
 | COMMON |rosneuro_recorder | OK | [libxdffileio](#libxdffileio) |
 | COMMON | rosneuro_msgs | OK ||
 | COMMON | rosneuro_data | OK ||
@@ -14,9 +16,28 @@
 | INPUT | rosneuro_acquisition_lsl | OK | [liblsl](#liblsl) ||
 | INPUT | rosneuro_acquisition |OK ||
 | INPUT | rosneuro_acquisition_dummydev | OK ||
-| PROCESS | rosneuro_decisionmaking | ERROR | [wtkprocessing](#wtkprocessing) |
-| PROCESS | rosneuro_processing | ERROR | [wtkprocessing](#wtkprocessing)|
+| PROCESS | rosneuro_decisionmaking | OK | [wtkprocessing](#wtkprocessing) |
+| PROCESS | rosneuro_processing | OK | [wtkprocessing](#wtkprocessing)|
 | APP | rosneuro_cybathlon | OK ||
+
+
+# Installation
+
+- Install ROS following the official guide:
+http://wiki.ros.org/Installation/Ubuntu
+
+- Git clone (--recursive !)
+```bash
+$ git clone --recursive https://github.com/cesare-montresor/rosneuro_workspace_ubuntu.git ./rosneuro
+```
+- Install deps
+
+A first attemp to automate the installation of dependencies is done via install.sh
+```bash
+sudo ./install.sh
+```
+Follow the next section in case of issues.
+
 
 
 
