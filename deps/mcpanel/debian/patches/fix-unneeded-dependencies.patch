@@ -1,0 +1,22 @@
+Description: Fix unneeded libs GTK+ dependencies
+ Hardcode the GTK+/Glib libraries that must be linked. This workaround the
+ problem of badly configured pkgconfig.pc files.
+Origin: vendor
+Forwarded: not-needed
+Author: nicolas bourdaud <nicolas.bourdaud@gmail.com>
+Last-Update: 2012-01-23
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -36,7 +36,11 @@
+ AC_DEF_API_EXPORT_ATTRS
+ 
+ PKG_CHECK_MODULES(GTK2, gtk+-2.0)
++GTK2_LIBS="-lgtk-x11-2.0 -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0"
++GTK2_LDFLAGS="-pthread"
+ PKG_CHECK_MODULES(GTHREAD2, gthread-2.0)
++GTHREAD2_LIBS="-lgthread-2.0 -lglib-2.0"
++GTHREAD2_LDFLAGS="-pthread"
+ 
+ AC_SEARCH_LIBS([rtf_create_filter], [rtfilter], [], AC_MSG_ERROR([The rtfilter library must be installed.]))
+ 

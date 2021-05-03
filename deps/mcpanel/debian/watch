@@ -1,0 +1,5 @@
+# format version number, currently 3; this line is compulsory!
+version=3
+
+http://cnbisrv02.epfl.ch/packages/mcpanel/mcpanel-(\d+\.\d+[[:lower:]]?)\.tar\.bz2
+

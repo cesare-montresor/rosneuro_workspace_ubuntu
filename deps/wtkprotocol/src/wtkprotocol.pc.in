@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libwtkprotocol
+Description: WHi Toolkit Protocol library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lwtkprotocol
+Cflags: -I${includedir}/wtkprotocol

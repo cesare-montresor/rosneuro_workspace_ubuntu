@@ -1,0 +1,33 @@
+--- a/debian/control
++++ b/debian/control
+@@ -2,7 +2,7 @@
+ Section: libs
+ Priority: extra
+ Maintainer: Nicolas Bourdaud <nicolas.bourdaud@gmail.com>
+-Build-Depends: debhelper (>= 7.0.50~), dpkg-dev (>= 1.16.1~), dh-autoreconf,
++Build-Depends: debhelper (>= 7.0.50~), dh-autoreconf,
+  pkg-config, libgtk2.0-dev, librtfilter-dev
+ Standards-Version: 3.9.2
+ Vcs-Git: git://anonscm.debian.org/pkg-exppsy/mcpanel.git
+--- a/debian/rules
++++ b/debian/rules
+@@ -5,16 +5,11 @@
+ #export DH_VERBOSE=1
+ 
+ ifeq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+-	DEB_CFLAGS_MAINT_APPEND = -O3 -Wall -Wextra
++	CFLAGS += -O3 -Wall -Wextra
+ else
+-	DEB_CFLAGS_MAINT_APPEND = -Wall -Wextra
++	CFLAGS += -Wall -Wextra
+ endif
+-DEB_LDFLAGS_MAINT_APPEND=-Wl,-Bsymbolic-functions
+-DEB_BUILD_MAINT_OPTIONS=hardening=-all,+format,+relro
+-
+-include /usr/share/dpkg/buildflags.mk
+-
+-export CFLAGS LDFLAGS CPPFLAGS
++export CFLAGS
+ 
+ %:
+ 	dh  $@ --with autoreconf

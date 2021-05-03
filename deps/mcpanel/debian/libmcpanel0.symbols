@@ -1,0 +1,16 @@
+libmcpanel.so.0 libmcpanel0 #MINVER#
+ mcp_add_samples@Base 0.0
+ mcp_add_triggers@Base 0.0
+ mcp_connect_signal@Base 0.0
+ mcp_create@Base 0.0
+ mcp_define_tab_input@Base 0.0
+ mcp_define_triggers@Base 0.0
+ mcp_destroy@Base 0.0
+ mcp_init_lib@Base 0.0
+ mcp_notify@Base 0.0
+ mcp_open_filename_dialog@Base 0.0
+ mcp_popup_message@Base 0.0
+ mcp_register_callback@Base 0.0
+ mcp_run@Base 0.0
+ mcp_show@Base 0.0
+ mcp_unregister_callback@Base 0.0

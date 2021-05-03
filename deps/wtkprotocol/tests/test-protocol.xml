@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<wtkprotocol>
+
+	<taskset name="smr">
+
+		<mi_hand_right id ="0" type ="inc">
+			<trials>10</trials>
+			<threshold>0.7</threshold>
+			<integration>0.96</integration>
+			<rejection>0.55</rejection>
+			<command>0</command>
+		</mi_hand_right>
+
+		<mi_both_feet id="1" type="inc">
+			<trials>15</trials>
+			<threshold>0.8</threshold>
+			<integration>0.97</integration>
+			<rejection>0.55</rejection>
+			<command>1</command>
+		</mi_both_feet>
+
+	</taskset>
+	
+	<timings>
+		<begin>3000</begin>
+		<fixation>3000</fixation>
+		<cue>1000</cue>
+		<iti>1000</iti>
+		<feedback-min>4000</feedback-min>
+		<feedback-max>5500</feedback-max>
+		<end>3000</end>
+	</timings>
+</wtkprotocol>

@@ -1,13 +1,27 @@
-ubuntu@ubuntu1804:~/rosneuro$ ./build.sh 
-Base path: /home/ubuntu/rosneuro/catkin_ws
-Source space: /home/ubuntu/rosneuro/catkin_ws/src
-Build space: /home/ubuntu/rosneuro/catkin_ws/build
-Devel space: /home/ubuntu/rosneuro/catkin_ws/devel
-Install space: /home/ubuntu/rosneuro/catkin_ws/install
+ubuntu@ubuntu1804:~/rosneuro_clean/catkin_ws$ catkin_make
+Base path: /home/ubuntu/rosneuro_clean/catkin_ws
+Source space: /home/ubuntu/rosneuro_clean/catkin_ws/src
+Build space: /home/ubuntu/rosneuro_clean/catkin_ws/build
+Devel space: /home/ubuntu/rosneuro_clean/catkin_ws/devel
+Install space: /home/ubuntu/rosneuro_clean/catkin_ws/install
 ####
-#### Running command: "make cmake_check_build_system" in "/home/ubuntu/rosneuro/catkin_ws/build"
+#### Running command: "cmake /home/ubuntu/rosneuro_clean/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/ubuntu/rosneuro_clean/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/rosneuro_clean/catkin_ws/install -G Unix Makefiles" in "/home/ubuntu/rosneuro_clean/catkin_ws/build"
 ####
--- Using CATKIN_DEVEL_PREFIX: /home/ubuntu/rosneuro/catkin_ws/devel
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/ubuntu/rosneuro_clean/catkin_ws/devel
 -- Using CMAKE_PREFIX_PATH: /opt/ros/melodic
 -- This workspace overlays: /opt/ros/melodic
 -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
@@ -16,10 +30,19 @@ Install space: /home/ubuntu/rosneuro/catkin_ws/install
 -- Using empy: /usr/bin/empy
 -- Using CATKIN_ENABLE_TESTING: ON
 -- Call enable_testing()
--- Using CATKIN_TEST_RESULTS_DIR: /home/ubuntu/rosneuro/catkin_ws/build/test_results
+-- Using CATKIN_TEST_RESULTS_DIR: /home/ubuntu/rosneuro_clean/catkin_ws/build/test_results
 -- Found gtest sources under '/usr/src/googletest': gtests will be built
 -- Found gmock sources under '/usr/src/googletest': gmock will be built
 -- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
 -- Using Python nosetests: /usr/bin/nosetests-2.7
 -- catkin 0.7.29
 -- BUILD_SHARED_LIBS is on
@@ -50,6 +73,7 @@ Install space: /home/ubuntu/rosneuro/catkin_ws/install
 -- ==> add_subdirectory(rosneuro_cybathlon)
 -- +++ processing catkin package: 'rosneuro_data'
 -- ==> add_subdirectory(rosneuro_data)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
 -- +++ processing catkin package: 'rosneuro_acquisition'
 -- ==> add_subdirectory(rosneuro_acquisition)
 -- +++ processing catkin package: 'rosneuro_acquisition_dummydev'
@@ -63,46 +87,15 @@ Install space: /home/ubuntu/rosneuro/catkin_ws/install
 -- +++ processing catkin package: 'rosneuro_decisionmaking'
 -- ==> add_subdirectory(rosneuro_decisionmaking)
 -- Checking for one of the modules 'wtkprocessing'
-CMake Error at /usr/share/cmake-3.10/Modules/FindPkgConfig.cmake:645 (message):
-  None of the required 'wtkprocessing' found
-Call Stack (most recent call first):
-  rosneuro_decisionmaking/CMakeLists.txt:14 (pkg_search_module)
-
-
 -- +++ processing catkin package: 'rosneuro_feedback'
 -- ==> add_subdirectory(rosneuro_feedback)
 -- +++ processing catkin package: 'rosneuro_processing'
 -- ==> add_subdirectory(rosneuro_processing)
--- Checking for one of the modules 'wtkprocessing'
-CMake Error at /usr/share/cmake-3.10/Modules/FindPkgConfig.cmake:645 (message):
-  None of the required 'wtkprocessing' found
-Call Stack (most recent call first):
-  rosneuro_processing/CMakeLists.txt:14 (pkg_search_module)
-
-
 -- +++ processing catkin package: 'rosneuro_recorder'
 -- ==> add_subdirectory(rosneuro_recorder)
 -- +++ processing catkin package: 'rosneuro_visualizer'
 -- ==> add_subdirectory(rosneuro_visualizer)
-CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
-Please set them or make sure they are set and tested correctly in the CMake files:
-MCP_INCLUDE_DIRS
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-   used as include directory in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-MCP_LIBRARIES
-    linked by target "rosneuro_visualizer" in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
-    linked by target "neuroviz" in directory /home/ubuntu/rosneuro/catkin_ws/src/rosneuro_visualizer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/rosneuro_clean/catkin_ws/build
 
--- Configuring incomplete, errors occurred!
-See also "/home/ubuntu/rosneuro/catkin_ws/build/CMakeFiles/CMakeOutput.log".
-See also "/home/ubuntu/rosneuro/catkin_ws/build/CMakeFiles/CMakeError.log".
-Makefile:320: recipe for target 'cmake_check_build_system' failed
-make: *** [cmake_check_build_system] Error 1
-Invoking "make cmake_check_build_system" failed

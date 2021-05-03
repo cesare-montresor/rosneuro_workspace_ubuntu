@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libwtkprocessing
+Description: WHi Toolkit Processing library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lwtkprocessing
+Cflags: -I${includedir}/wtkprocessing

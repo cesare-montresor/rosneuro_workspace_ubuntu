@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+ifeq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	DEB_CFLAGS_MAINT_APPEND = -O3 -Wall -Wextra
+else
+	DEB_CFLAGS_MAINT_APPEND = -Wall -Wextra
+endif
+DEB_LDFLAGS_MAINT_APPEND=-Wl,-Bsymbolic-functions
+DEB_BUILD_MAINT_OPTIONS=hardening=-all,+format,+relro
+
+include /usr/share/dpkg/buildflags.mk
+
+export CFLAGS LDFLAGS CPPFLAGS
+
+%:
+	dh  $@ --with autoreconf
+
+override_dh_autoreconf:
+	dh_autoreconf --as-needed
+
+override_dh_auto_test:
+
+override_dh_strip:
+	dh_strip --dbg-package=libmcpanel0-dbg
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=libmcpanel0

@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libwtkxml
+Description: WHi Toolkit XML library
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lwtkxml
+Cflags: -I${includedir}/wtkxml
