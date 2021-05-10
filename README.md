@@ -1,5 +1,6 @@
 # rosneuro_workspace_ubuntu
 
+**Please DO [report issues](https://github.com/cesare-montresor/rosneuro_workspace_ubuntu/issues/new) encountered during the setup process** 
 
 
 # Build Report
