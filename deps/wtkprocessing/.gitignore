@@ -13,6 +13,3 @@ m4
 .libs
 *.autosave
 *.o
-*.swp
-*.swo
-tests/test-csp
