@@ -18,20 +18,16 @@ sudo apt-get install libxdffileio-dev
 sudo apt-get install librtfilter-dev
 
 
-cd deps/mcpanel/; sudo -H install.sh
-cd $PROJECT_ROOT
+(cd $PROJECT_ROOT/deps/mcpanel/; sudo -H ./install.sh)
 
 
 # wtklibs
 sudo apt-get install libnfft3-dev libfftw3-dev libtinyxml2-dev
 
-cd deps/wtkcore/; sudo -H install.sh
-cd $PROJECT_ROOT
-cd deps/wtkxml/; sudo -H install.sh
-cd $PROJECT_ROOT
-cd deps/wtkprocessing/; sudo -H install.sh
-cd $PROJECT_ROOT
-cd deps/wtkcore/; sudo -H install.sh
+(cd $PROJECT_ROOT/deps/wtkcore/; sudo -H ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkxml/; sudo -H ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkprocessing/; sudo -H ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkcore/; sudo -H ./install.sh)
 
 
 
