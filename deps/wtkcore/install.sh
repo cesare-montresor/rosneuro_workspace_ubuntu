@@ -10,5 +10,5 @@ autoreconf -if
 
 make clean
 make
-make install
+sudo -H make install
 

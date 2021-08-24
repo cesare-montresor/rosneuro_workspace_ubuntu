@@ -10,7 +10,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 
 sudo apt update
 
-sudo apt install ros-melodic-desktop-full
+sudo apt install ros-melodic-desktop-full 
+sudo apt install ros-melodic-rosbridge-suite 
 
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
