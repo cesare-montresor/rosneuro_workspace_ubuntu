@@ -10,6 +10,10 @@ case $1 in
         echo "list!"
     ;;
     
+    visualizer)
+        rosrun rosneuro_visualizer neuroviz $2 $3    
+    ;;
+    
     calibration)
         roslaunch rosneuro_launchers ebn_start_calibration.launch $2 $3    
     ;;
@@ -33,6 +37,7 @@ Usage:
     ./run.sh <mode>
     
 Modes:
+    visualizer
     calibration
     bridge
     recorder
