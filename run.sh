@@ -11,7 +11,7 @@ case $1 in
     ;;
     
     calibration)
-        roslaunch rosneuro_launchers calibration_win10.launch $2 $3    
+        roslaunch rosneuro_launchers ebn_start_calibration.launch $2 $3    
     ;;
     
     bridge)
