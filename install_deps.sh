@@ -2,7 +2,7 @@
 
 sudo pwd
 export PROJECT_ROOT=$(pwd)
-
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
 
 # Acquisition plugins
 sudo apt-get install libeegdev-dev 
@@ -18,16 +18,16 @@ sudo apt-get install libxdffileio-dev
 sudo apt-get install librtfilter-dev
 
 
-(cd $PROJECT_ROOT/deps/mcpanel/; sudo -H ./install.sh)
+(cd $PROJECT_ROOT/deps/mcpanel/; ./install.sh)
 
 
 # wtklibs
 sudo apt-get install libnfft3-dev libfftw3-dev libtinyxml2-dev
 
-(cd $PROJECT_ROOT/deps/wtkcore/; sudo -H ./install.sh)
-(cd $PROJECT_ROOT/deps/wtkxml/; sudo -H ./install.sh)
-(cd $PROJECT_ROOT/deps/wtkprocessing/; sudo -H ./install.sh)
-(cd $PROJECT_ROOT/deps/wtkcore/; sudo -H ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkcore/; ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkxml/; ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkprocessing/; ./install.sh)
+(cd $PROJECT_ROOT/deps/wtkcore/; ./install.sh)
 
 
 
