@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # 
  git clone --recursive https://github.com/cesare-montresor/rosneuro_workspace_ubuntu.git ./rosneuro
