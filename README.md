@@ -40,7 +40,7 @@ $ ./install_deps.sh
 ```
 Follow the next section in case of issues.
 
-##EXPERIALMENTAL
+ # One-line installer
 
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/cesare-montresor/rosneuro_workspace_ubuntu/main/full_install.sh)"
