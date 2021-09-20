@@ -23,6 +23,11 @@
 
 # Installation
 
+ ## One-line installer (experimental)
+
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/cesare-montresor/rosneuro_workspace_ubuntu/main/full_install.sh)"
+```
 
 - Install ROS following the official guide:
 http://wiki.ros.org/Installation/Ubuntu
@@ -40,11 +45,7 @@ $ ./install_deps.sh
 ```
 Follow the next section in case of issues.
 
- # One-line installer
 
-```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/cesare-montresor/rosneuro_workspace_ubuntu/main/full_install.sh)"
-```
 
 
 
